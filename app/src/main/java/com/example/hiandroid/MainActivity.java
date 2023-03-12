@@ -1,4 +1,5 @@
 package com.example.hiandroid;
+
 import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Button button;
     private static final String TAG = "MainActivity";
 
     @Override
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Log.w(TAG, "This is a verbase log.");
         Log.e(TAG, "This is a verbase log.");
 
-        Button button = (Button) findViewById(R.id.button2);
+         button = (Button) findViewById(R.id.button2);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                 startActivity(intent);
             }
-
-
         });
     }
 }
