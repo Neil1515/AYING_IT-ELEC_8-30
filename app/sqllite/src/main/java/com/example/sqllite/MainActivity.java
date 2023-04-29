@@ -1,7 +1,6 @@
 package com.example.sqllite;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.database.Cursor;
